@@ -1,21 +1,24 @@
-x = input("enter")
-y = int(x)
-
-
-
-#def name(x):
-#    print(x)
-#    x = x + " endret"
-#    return x
+oppgave = input("Oppgi '1' for gange, '2' for dele: ")
+x1 = int(input("Første tall: "))
+x2 = int(input("Andre tall: "))
 
 
 def multiplication(n1, n2):
-    n3 = n1*n2
-    return n3
+    return n1*n2
 
 
-result = multiplication(x, 3)
-print(result)
+def division(n1, n2):
+    return n1/n2
+
+
+if oppgave == 1:
+    result = multiplication(x1, x2)
+    print("løsningen på gangestykket ", x1, " * ", x2, " er: ", result)
+else:
+    result = division(x1, x2)
+    print("løsningen på delestykket ", x1, " / ", x2, " er: ", result)
+
+
 
 
 # noe fra en fil
